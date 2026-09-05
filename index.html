@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Моя Оптика — очки от 15 минут в центре Астрахани</title>
+<meta name="description" content="Моя Оптика — три салона оптики в центре Астрахани. Подберём очки под вас и ваш бюджет и сделаем от 15 минут. Оправы европейских брендов от 1600 ₽, очки под ключ от 3100 ₽, солнцезащитные с диоптриями, детские очки, ремонт в тот же день. +7 (8512) 48-27-41.">
+<link rel="canonical" href="https://moyaoptika30.ru/">
+<meta property="og:title" content="Моя Оптика — Мало смотреть — надо видеть!"><meta property="og:description" content="Очки от 15 минут. Три салона в центре Астрахани. Считаем до оплаты."><meta property="og:type" content="website"><meta property="og:locale" content="ru_RU">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23D69A5B'/%3E%3Cg fill='none' stroke='%23163B4E' stroke-width='6'%3E%3Ccircle cx='34' cy='52' r='16'/%3E%3Ccircle cx='66' cy='52' r='16'/%3E%3C/g%3E%3Ccircle cx='71' cy='46' r='3' fill='%23F5EFE4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Optician","name":"Моя Оптика","slogan":"Мало смотреть — надо видеть!","description":"Салоны оптики в центре Астрахани. Подбор очков по рецепту, изготовление от 15 минут, оправы европейских брендов, солнцезащитные с диоптриями, детские очки, контактные линзы, ремонт очков.","telephone":"+7-8512-48-27-41","email":"moyaoptika@mail.ru","url":"https://moyaoptika30.ru","priceRange":"₽₽","areaServed":{"@type":"City","name":"Астрахань"},"openingHours":"Mo-Su 09:00-19:00","paymentAccepted":"Наличные, карта, QR, рассрочка","currenciesAccepted":"RUB","sameAs":["https://2gis.ru/astrakhan/firm/70000001017362178"],
+"department":[{"@type":"Optician","name":"Моя Оптика на Коммунистической","telephone":"+7-8512-48-27-41","address":{"@type":"PostalAddress","streetAddress":"Коммунистическая улица, 2-4","addressLocality":"Астрахань","postalCode":"414000","addressCountry":"RU"},"openingHours":"Mo-Su 09:00-19:00"},{"@type":"Optician","name":"Моя Оптика на Софьи Перовской","address":{"@type":"PostalAddress","streetAddress":"улица Софьи Перовской, 77","addressLocality":"Астрахань","addressCountry":"RU"},"openingHours":"Mo-Su 09:00-19:00"},{"@type":"Optician","name":"Моя Оптика на Адмиралтейской","address":{"@type":"PostalAddress","streetAddress":"Адмиралтейская улица, 13","addressLocality":"Астрахань","addressCountry":"RU"},"openingHours":"Mo-Su 09:00-19:00"}],
+"makesOffer":[{"@type":"Offer","name":"Очки под ключ (оправа + линзы по рецепту)","price":"3100","priceCurrency":"RUB"},{"@type":"Offer","name":"Оправы европейских брендов","price":"1600","priceCurrency":"RUB"},{"@type":"Offer","name":"Очковые линзы (пара)","price":"1000","priceCurrency":"RUB"},{"@type":"Offer","name":"Контактные линзы (пара)","price":"600","priceCurrency":"RUB"}]}
+</script>
+<style>
+:root{--ink:#163B4E;--ink2:#0F2A38;--text:#232323;--muted:#6E685C;--cream:#F5EFE4;--paper:#FDFBF7;--line:rgba(22,59,78,.11);
+ --rail:7.5%;--col:20%;--dur:.9s;--ease:cubic-bezier(.76,0,.24,1)}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--paper);color:var(--text);font:15px/1.7 "IBM Plex Mono",ui-monospace,Menlo,monospace;overflow:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit}button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+
+/* guide lines */
+.lines{position:fixed;inset:0;pointer-events:none;z-index:2}
+.lines i{position:absolute;top:0;bottom:0;width:1px;background:var(--line)}
+.lines i:nth-child(1){left:var(--rail)}.lines i:nth-child(2){left:var(--col)}.lines i:nth-child(3){left:51%}.lines i:nth-child(4){left:60.5%}.lines i:nth-child(5){left:72.5%}.lines i:nth-child(6){left:87%}
+
+/* colour field with wavy boundary */
+.field{position:fixed;inset:0;z-index:1;pointer-events:none}
+.field svg{width:100%;height:100%;display:block}
+
+/* bar */
+.bar{position:fixed;inset:0 0 auto 0;height:110px;z-index:30;pointer-events:none}
+.bar>*{pointer-events:auto;position:absolute;top:50%;transform:translateY(-50%)}
+.burger{left:calc(var(--rail) - 26px);width:52px;height:52px;border-radius:50%;border:0;background:rgba(22,59,78,.06);display:grid;place-items:center;transition:background .2s}
+.burger span{display:block;width:16px;height:1.6px;background:var(--ink);margin:2.3px 0}
+.burger:hover{background:rgba(22,59,78,.12)}
+.brand{left:var(--col);display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink);font-family:Manrope,sans-serif;font-weight:800;letter-spacing:.08em;font-size:21px}
+.brand svg{width:48px;height:36px}
+.brand small{font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:10px;letter-spacing:.14em;line-height:1.25;color:var(--ink);border-left:1px solid rgba(22,59,78,.3);padding-left:14px}
+.menu{left:60.5%;display:flex;gap:44px;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
+.menu a{text-decoration:none;color:var(--ink)}
+.menu a:hover{text-decoration:underline;text-underline-offset:7px}
+.call{right:2.6%;width:52px;height:52px;border-radius:50%;background:var(--paper);color:var(--ink);display:grid;place-items:center;text-decoration:none;box-shadow:0 10px 30px -12px rgba(22,59,78,.4)}
+@media (max-width:960px){.menu,.brand small{display:none}.bar{height:80px}.burger{left:16px}.brand{left:84px;font-size:18px}}
+
+/* rail */
+.rail{position:fixed;left:var(--rail);top:50%;transform:translate(-50%,-50%);z-index:20;display:flex;flex-direction:column;align-items:center;gap:16px;font-size:11px;letter-spacing:.12em;color:var(--ink)}
+.rail .n{writing-mode:vertical-rl;transform:rotate(180deg);font-variant-numeric:tabular-nums}
+.rail .track{width:1px;height:170px;background:rgba(22,59,78,.25);position:relative}
+.rail .track b{position:absolute;left:-1px;bottom:0;width:3px;border-radius:2px;background:var(--ink);height:0;transition:height .6s var(--ease)}
+@media (max-width:960px){.rail{display:none}}
+
+/* dots with progress ring */
+.dots{position:fixed;left:var(--col);bottom:7vh;z-index:20;display:flex;gap:34px;align-items:center}
+.dot{position:relative;width:32px;height:32px;border:0;background:none;padding:0;display:grid;place-items:center}
+.dot i{width:9px;height:9px;border-radius:50%;background:var(--ink);opacity:.28;transition:transform .35s,opacity .35s}
+.dot[aria-current="true"] i{opacity:1;transform:scale(1.55)}
+.dot svg{position:absolute;inset:0;transform:rotate(-90deg)}
+.dot circle{fill:none;stroke:var(--ink);stroke-width:1.3;stroke-dasharray:88;stroke-dashoffset:88;opacity:0}
+.dot[aria-current="true"] circle{opacity:1}
+@media (max-width:960px){.dots{left:50%;transform:translateX(-50%);bottom:18px;gap:22px}}
+
+/* slides */
+.stage{position:fixed;inset:0;z-index:5}
+.slide{position:absolute;inset:0;visibility:hidden}
+.slide.active,.slide.leaving{visibility:visible}
+.copy{position:absolute;left:var(--col);top:50%;transform:translateY(-50%);width:min(44vw,800px)}
+.kicker{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink);opacity:.75;margin-bottom:26px}
+.mask{overflow:hidden;margin:0 0 30px}
+.word{font-family:Manrope,sans-serif;font-weight:700;color:var(--ink);font-size:clamp(58px,8.9vw,178px);line-height:.96;letter-spacing:-.035em;margin:0;text-wrap:balance;transform:translateY(0)}
+.word em{font-style:normal;color:var(--acc)}
+.word.long{font-size:clamp(44px,6.1vw,120px);line-height:1}
+.word.mid{font-size:clamp(52px,7.2vw,150px)}
+.desc{font-size:clamp(13.5px,1.05vw,16px);line-height:1.9;margin:0 0 40px;color:#333;max-width:46ch}
+.cta{display:inline-flex;align-items:center;justify-content:center;min-width:240px;padding:22px 42px;border-radius:999px;background:var(--acc);color:var(--ink);text-decoration:none;font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:500;box-shadow:0 18px 34px -16px var(--acc);transition:transform .2s,box-shadow .2s}
+.cta:hover{transform:translateY(-2px)}
+.cta.dark{background:var(--ink);color:var(--cream);box-shadow:0 18px 34px -16px rgba(22,59,78,.9)}
+.side{position:absolute;left:58%;right:3%;top:12vh;bottom:12vh;display:grid;place-items:center}
+.pic{height:100%;max-width:100%;display:grid;place-items:end center;will-change:transform}
+.pic img{height:100%;width:auto;max-width:100%;object-fit:contain;filter:drop-shadow(0 50px 50px rgba(22,59,78,.28));user-select:none;-webkit-user-drag:none}
+
+/* transitions: text slides vertically, image pours down */
+.kicker,.desc,.cta,.addr,.big-phone{transition:opacity .38s var(--ease),transform .45s var(--ease)}
+.word{transition:transform .5s var(--ease)}
+.side{transition:transform .5s var(--ease),opacity .4s ease}
+.slide.snap *{transition:none!important}
+.slide.enter .word{transform:translateY(112%)}
+.slide.enter .kicker,.slide.enter .desc,.slide.enter .cta,.slide.enter .addr,.slide.enter .big-phone{opacity:0;transform:translateY(24px)}
+.slide.enter .side{transform:translateY(-70vh) skewY(-4deg);opacity:0}
+.slide.leaving .word{transform:translateY(-112%)}
+.slide.leaving .kicker,.slide.leaving .desc,.slide.leaving .cta,.slide.leaving .addr,.slide.leaving .big-phone{opacity:0;transform:translateY(-18px)}
+.slide.leaving .side{transform:translateY(80vh) skewY(5deg) scaleY(1.15);opacity:0}
+.slide.active .cta{transition-delay:.12s}.slide.active .desc{transition-delay:.06s}
+
+/* salons */
+.addr{display:grid;gap:10px;margin:0 0 28px;padding:0;list-style:none}
+.addr b{font-family:Manrope,sans-serif;font-weight:800;color:var(--ink);font-size:16px;display:block}
+.addr span{color:var(--muted);font-size:12.5px}
+.addr a{color:var(--ink);text-decoration:none}
+.big-phone{font-family:Manrope,sans-serif;font-weight:800;font-size:clamp(26px,2.6vw,38px);color:var(--ink);text-decoration:none;display:block;margin-bottom:26px;letter-spacing:-.02em}
+body.dark .menu a{color:var(--cream)}
+
+@media (max-width:960px){
+  .copy{left:6%;right:6%;width:auto;top:auto;bottom:80px;transform:none}
+  .mask{margin-bottom:16px}.word{font-size:clamp(44px,12vw,72px)}.desc{margin-bottom:22px;font-size:13.5px}
+  .cta{min-width:0;padding:16px 28px;font-size:12px}
+  .side{left:8%;right:8%;top:76px;bottom:52%}
+  .kicker{margin-bottom:14px}
+}
+
+/* overlay menu */
+.overlay{position:fixed;inset:0;z-index:40;background:var(--ink);color:var(--cream);display:grid;grid-template-columns:1fr 1fr;padding:130px 8vw 60px 20%;gap:40px;transform:translateY(-102%);transition:transform .6s var(--ease)}
+.overlay.open{transform:none}
+.overlay .x{position:absolute;top:29px;left:calc(var(--rail) - 26px);width:52px;height:52px;border-radius:50%;border:1.5px solid rgba(245,239,228,.5);background:transparent;color:var(--cream);font-size:22px}
+.overlay h3{font-weight:500;font-size:11px;letter-spacing:.22em;text-transform:uppercase;opacity:.6;margin:0 0 18px}
+.overlay ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.overlay ul a{color:var(--cream);text-decoration:none;font-family:Manrope,sans-serif;font-weight:800;font-size:clamp(22px,2.8vw,38px);letter-spacing:-.02em;line-height:1.15}
+.overlay ul a:hover{color:#D69A5B}
+.overlay .small a{font-family:"IBM Plex Mono",monospace;font-weight:400;font-size:15px;letter-spacing:0}
+@media (max-width:960px){.overlay{grid-template-columns:1fr;padding:100px 24px 40px;overflow:auto}.overlay .x{left:16px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="field" aria-hidden="true">
+  <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+    <defs><clipPath id="pour" clipPathUnits="userSpaceOnUse"><path id="pourPath" d="M0 -40 L100 -40 L100 -40 L0 -40 Z"/></clipPath></defs>
+    <path id="base" fill="#E7D3B6" d="M43 0 C 39 22, 63 30, 58 50 C 53 70, 72 84, 64 100 L 100 100 L 100 0 Z"/>
+    <path id="next" fill="#CFE0F0" clip-path="url(#pour)" d="M43 0 C 39 22, 63 30, 58 50 C 53 70, 72 84, 64 100 L 100 100 L 100 0 Z"/>
+  </svg>
+</div>
+<div class="lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+
+<header class="bar">
+  <button class="burger" id="burger" aria-label="Меню"><span></span><span></span></button>
+  <a class="brand" href="#" aria-label="Моя Оптика"><svg viewBox="0 0 108 80" aria-hidden="true"><polygon points="4,12 54,4 104,12 104,68 54,76 4,68" fill="#D69A5B" stroke="#D69A5B" stroke-width="8" stroke-linejoin="round"/><g fill="none" stroke="#163B4E" stroke-width="4.5" stroke-linecap="round"><circle cx="38" cy="40" r="15"/><circle cx="70" cy="40" r="15"/><path d="M52 34 Q54 30 56 34"/></g><circle cx="75" cy="36" r="2.6" fill="#F5EFE4"/></svg>МОЯ ОПТИКА<small>ОЧКИ ОТ<br>15 МИНУТ</small></a>
+  <nav class="menu"><a href="#" data-go="1">15 минут</a><a href="#" data-go="2">Оправы</a><a href="stati/index.html">Полезное</a><a href="#" data-go="5">Салоны</a></nav>
+  <a class="call" href="tel:+78512482741" aria-label="Позвонить +7 (8512) 48-27-41"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8 9.8a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.7.7a2 2 0 011.9 2z"/></svg></a>
+</header>
+
+<aside class="rail" aria-hidden="true"><span class="n" id="railTop">6</span><div class="track"><b id="railBar"></b></div><span class="n" id="railCur">1</span></aside>
+
+<main class="stage" id="stage">
+  <section class="slide active" data-color="#E7D3B6" data-acc="#D69A5B" style="--acc:#D69A5B">
+    <div class="copy"><div class="kicker">Салоны оптики · центр Астрахани · с 2011</div><div class="mask"><h1 class="word long">Мало смотреть —<br><em>надо видеть!</em></h1></div>
+      <p class="desc">Подберём очки под ваше зрение и ваш бюджет — и сделаем от 15 минут. Считаем до оплаты, не навязываем дорогое. Три салона в центре, 300+ оправ на витрине.</p>
+      <a class="cta" href="#" data-go="1">Как это работает</a></div>
+    <div class="side"><div class="pic" data-parallax="16"><img src="img/woman.webp" alt="Девушка в тонкой золотой оправе — Моя Оптика, Астрахань" width="900" height="1193" loading="eager"></div></div>
+  </section>
+
+  <section class="slide" data-color="#CFE0F0" data-acc="#163B4E" style="--acc:#163B4E">
+    <div class="copy"><div class="kicker">01 · Скорость</div><div class="mask"><h2 class="word">15 минут</h2></div>
+      <p class="desc">Пришли с рецептом — выбрали оправу — мастер вставил линзы при вас. Если линзы в наличии, а так бывает в большинстве случаев, вы уходите в очках, пока остывает кофе в соседнем доме. Очки под ключ — от 3100 ₽.</p>
+      <a class="cta dark" href="stati/ochki-za-15-minut.html">Как это устроено</a></div>
+    <div class="side"><div class="pic" data-parallax="14"><img src="img/coffee.webp" alt="Клиентка с новыми очками и кофе — очки готовы за 15 минут" width="900" height="1193" loading="lazy"></div></div>
+  </section>
+
+  <section class="slide" data-color="#D69A5B" data-acc="#163B4E" style="--acc:#163B4E">
+    <div class="copy"><div class="kicker">02 · Витрина</div><div class="mask"><h2 class="word">300+ оправ</h2></div>
+      <p class="desc">Enni Marco, Mario Rossi, Antonio Vivaldi, Helen Rocha, Tony Morgan, Tom Hart. Металл, ацетат, безободковые. Мерить можно все — иногда «неправильная» оправа оказывается вашей. От 1600 ₽, гарантия год.</p>
+      <a class="cta dark" href="stati/skolko-stoyat-ochki-v-astrahani.html">Из чего складывается цена</a></div>
+    <div class="side"><div class="pic" data-parallax="14"><img src="img/frames.webp" alt="Оправы с витрины Моей Оптики" width="900" height="1193" loading="lazy"></div></div>
+  </section>
+
+  <section class="slide" data-color="#F6C89A" data-acc="#163B4E" style="--acc:#163B4E">
+    <div class="copy"><div class="kicker">03 · Астрахань · солнце полгода</div><div class="mask"><h2 class="word">Солнце</h2></div>
+      <p class="desc">Солнцезащитные с вашими диоптриями: UV400, поляризация для воды и дороги, фотохром. Не выбирайте между «видеть» и «не щуриться». Для рыбаков — отдельный разговор.</p>
+      <a class="cta dark" href="stati/solncezashchitnye-ochki-s-dioptriyami.html">Подробнее про солнце</a></div>
+    <div class="side"><div class="pic" data-parallax="14"><img src="img/man.webp" alt="Мужчина в поляризационных солнцезащитных очках на Волге" width="900" height="1193" loading="lazy"></div></div>
+  </section>
+
+  <section class="slide" data-color="#CFE8D8" data-acc="#163B4E" style="--acc:#163B4E">
+    <div class="copy"><div class="kicker">04 · Школьникам</div><div class="mask"><h2 class="word">Детям</h2></div>
+      <p class="desc">Лёгкие гибкие оправы, небьющиеся линзы с упрочнением, и главное правило — ребёнок выбирает сам. Гарантия год, регулировка бесплатно сколько угодно раз. В сентябре вторая пара — за полцены.</p>
+      <a class="cta dark" href="stati/ochki-dlya-shkolnika.html">Как выбрать очки ребёнку</a></div>
+    <div class="side"><div class="pic" data-parallax="14"><img src="img/kid.webp" alt="Школьник в лёгкой синей оправе" width="900" height="1193" loading="lazy"></div></div>
+  </section>
+
+  <section class="slide" data-color="#163B4E" data-acc="#D69A5B" style="--acc:#D69A5B">
+    <div class="copy"><div class="kicker">05 · Три салона в центре</div><div class="mask"><h2 class="word mid">Салоны</h2></div>
+      <ul class="addr desc"><li><b>Коммунистическая, 2-4</b><span>1 этаж · рядом с Драмтеатром · <a href="https://2gis.ru/astrakhan/firm/70000001017362178" target="_blank" rel="noopener">2ГИС →</a></span></li><li><b>Софьи Перовской, 77</b><span>ежедневно 09:00–19:00</span></li><li><b>Адмиралтейская, 13</b><span>ежедневно 09:00–19:00</span></li></ul>
+      <a class="big-phone" href="tel:+78512482741">+7 (8512) 48-27-41</a>
+      <a class="cta" href="https://vk.com/moyaoptika30" target="_blank" rel="noopener">Написать во ВКонтакте</a></div>
+    <div class="side"><div class="pic" data-parallax="12"><img src="img/optician.webp" alt="Оптик салона Моя Оптика с очками в руках" width="900" height="1193" loading="lazy"></div></div>
+  </section>
+</main>
+
+<div class="dots" id="dots" role="tablist" aria-label="Разделы"></div>
+
+<div class="overlay" id="overlay">
+  <button class="x" id="closeMenu" aria-label="Закрыть">×</button>
+  <div><h3>Разделы</h3><ul><li><a href="#" data-go="0">Мало смотреть — надо видеть</a></li><li><a href="#" data-go="1">Очки от 15 минут</a></li><li><a href="#" data-go="2">300+ оправ</a></li><li><a href="#" data-go="3">Солнцезащитные с диоптриями</a></li><li><a href="#" data-go="4">Детям</a></li><li><a href="#" data-go="5">Салоны и контакты</a></li></ul></div>
+  <div><h3>Полезное</h3><ul class="small"><li><a href="stati/skolko-stoyat-ochki-v-astrahani.html">Сколько стоят очки в Астрахани</a></li><li><a href="stati/ochki-za-15-minut.html">Как работает изготовление от 15 минут</a></li><li><a href="stati/ochki-dlya-shkolnika.html">Очки для школьника</a></li><li><a href="stati/solncezashchitnye-ochki-s-dioptriyami.html">Солнцезащитные с диоптриями</a></li><li><a href="stati/remont-ochkov.html">Ремонт очков</a></li><li><a href="stati/kak-vybrat-linzy-dlya-ochkov.html">Как выбрать линзы</a></li><li><a href="stati/kontaktnye-linzy-v-astrahani.html">Контактные линзы</a></li><li><a href="stati/index.html">Все статьи →</a></li></ul>
+  <h3 style="margin-top:34px">Контакты</h3><ul class="small"><li><a href="tel:+78512482741">+7 (8512) 48-27-41</a></li><li><a href="mailto:moyaoptika@mail.ru">moyaoptika@mail.ru</a></li><li><a href="https://vk.com/moyaoptika30" target="_blank" rel="noopener">ВКонтакте</a></li></ul></div>
+</div>
+
+<script>
+(() => {
+  const slides = [...document.querySelectorAll('.slide')], N = slides.length;
+  const base = document.getElementById('base'), next = document.getElementById('next'), pourPath = document.getElementById('pourPath');
+  const dots = document.getElementById('dots'), railBar = document.getElementById('railBar'), railCur = document.getElementById('railCur');
+  document.getElementById('railTop').textContent = N;
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const DUR = 900, AUTOPLAY = 6500, OUT = 420;
+
+  /* liquid boundary: control points breathe all the time, swell during a switch */
+  let swell = 0; // 0..1 extra amplitude while pouring
+  function boundary(t) {
+    const a = 1.2 + swell * 4, w = t / 1400;
+    const x0 = 43 + Math.sin(w) * a, c1x = 39 + Math.sin(w * 1.3 + 1) * a * 1.4, c2x = 63 + Math.cos(w * .9 + 2) * a * 1.6, mx = 58 + Math.sin(w * 1.1 + .5) * a;
+    const c3x = 53 + Math.cos(w * 1.2 + 3) * a * 1.5, c4x = 72 + Math.sin(w * .8 + 4) * a * 1.4, x1 = 64 + Math.cos(w * 1.05) * a;
+    return `M${x0} 0 C ${c1x} 22, ${c2x} 30, ${mx} 50 C ${c3x} 70, ${c4x} 84, ${x1} 100 L 100 100 L 100 0 Z`;
+  }
+  (function breathe(t) { if (!reduce) { const d = boundary(t); base.setAttribute('d', d); next.setAttribute('d', d); } requestAnimationFrame(breathe); })(performance.now());
+
+  /* pour: wavy front travels top -> bottom revealing the next colour */
+  function wave(y, phase) { const a = 7; return `M -5 ${y + Math.sin(phase) * a} C 15 ${y - a * 2.2}, 35 ${y + a * 2.2}, 50 ${y + Math.cos(phase) * a} S 80 ${y - a * 2}, 105 ${y + a} L 105 -100 L -5 -100 Z`; }
+  function pour(color) {
+    if (reduce) { base.setAttribute('fill', color); return; }
+    next.setAttribute('fill', color); const t0 = performance.now();
+    (function step(t) { let p = Math.min(1, (t - t0) / DUR); const e = p < .5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2; swell = Math.sin(p * Math.PI);
+      pourPath.setAttribute('d', wave(-30 + e * 170, p * 7));
+      if (p < 1) requestAnimationFrame(step); else { base.setAttribute('fill', color); pourPath.setAttribute('d', 'M0 -40 L100 -40 L100 -40 L0 -40 Z'); swell = 0; } })(t0);
+  }
+
+  /* dots */
+  const dotEls = slides.map((s, i) => { const b = document.createElement('button'); b.className = 'dot'; b.setAttribute('role', 'tab'); b.setAttribute('aria-label', 'Раздел ' + (i + 1));
+    b.innerHTML = '<svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="14"/></svg><i></i>'; b.onclick = () => go(i, true); dots.appendChild(b); return b; });
+
+  let cur = 0, busy = false, ringStart = 0, paused = false;
+  const overlay = document.getElementById('overlay');
+  function setRing(p) { dotEls[cur].querySelector('circle').style.strokeDashoffset = 88 - 88 * p; }
+  function resetRing() { dotEls.forEach(d => d.querySelector('circle').style.strokeDashoffset = 88); ringStart = performance.now(); }
+  (function tickRing(t) {
+    if (!paused && !busy && !overlay.classList.contains('open')) { const p = Math.min(1, (t - ringStart) / AUTOPLAY); setRing(p); if (p >= 1) go(cur + 1); }
+    else { const off = parseFloat(dotEls[cur].querySelector('circle').style.strokeDashoffset || 88); ringStart = t - (88 - off) / 88 * AUTOPLAY; }
+    requestAnimationFrame(tickRing);
+  })(performance.now());
+
+  function setUI(i) {
+    dotEls.forEach((d, k) => d.setAttribute('aria-current', k === i));
+    railBar.style.height = ((i + 1) / N * 100) + '%'; railCur.textContent = i + 1;
+    document.body.classList.toggle('dark', slides[i].dataset.color === '#163B4E');
+  }
+  function go(i, manual) {
+    if (busy) return; i = (i + N) % N; if (i === cur) return; busy = true;
+    const from = slides[cur], to = slides[i];
+    /* phase 1: current leaves; colour starts pouring */
+    from.classList.add('leaving'); pour(to.dataset.color); setUI(i); resetRing();
+    to.querySelectorAll('img[loading="lazy"]').forEach(im => im.loading = 'eager');
+    setTimeout(() => {
+      /* phase 2: old is gone; new appears from its offset position, then animates in */
+      from.classList.remove('active', 'leaving');
+      to.classList.add('snap', 'enter', 'active');
+      requestAnimationFrame(() => { to.classList.remove('snap'); requestAnimationFrame(() => to.classList.remove('enter')); });
+      cur = i;
+      setTimeout(() => { busy = false; resetRing(); }, 520);
+    }, OUT);
+  }
+
+  /* input */
+  let wheelLock = 0;
+  addEventListener('wheel', e => { if (overlay.classList.contains('open')) return; const now = performance.now(); if (now - wheelLock < 1100 || Math.abs(e.deltaY) < 10) return; wheelLock = now; go(cur + (e.deltaY > 0 ? 1 : -1), true); }, {passive: true});
+  addEventListener('keydown', e => { if (['ArrowDown', 'PageDown', ' ', 'ArrowRight'].includes(e.key)) { e.preventDefault(); go(cur + 1, true); } if (['ArrowUp', 'PageUp', 'ArrowLeft'].includes(e.key)) { e.preventDefault(); go(cur - 1, true); } if (e.key === 'Escape') closeMenu(); });
+  let ty = 0, tx = 0; addEventListener('touchstart', e => { ty = e.touches[0].clientY; tx = e.touches[0].clientX; }, {passive: true});
+  addEventListener('touchend', e => { const dy = e.changedTouches[0].clientY - ty, dx = e.changedTouches[0].clientX - tx; if (Math.abs(dy) > 60 && Math.abs(dy) > Math.abs(dx) * 1.3) go(cur + (dy < 0 ? 1 : -1), true); });
+  document.querySelectorAll('[data-go]').forEach(a => a.addEventListener('click', e => { e.preventDefault(); closeMenu(); go(+a.dataset.go, true); }));
+  function closeMenu() { overlay.classList.remove('open'); }
+  document.getElementById('burger').onclick = () => overlay.classList.add('open');
+  document.getElementById('closeMenu').onclick = closeMenu;
+  document.addEventListener('visibilitychange', () => { paused = document.hidden; });
+  /* pause autoplay while hovering the picture */
+  document.querySelectorAll('.side').forEach(el => { el.addEventListener('pointerenter', () => paused = true); el.addEventListener('pointerleave', () => paused = false); });
+
+  /* parallax */
+  addEventListener('pointermove', e => { if (reduce) return; const x = e.clientX / innerWidth - .5, y = e.clientY / innerHeight - .5; document.querySelectorAll('.slide.active .pic').forEach(p => { const k = +p.dataset.parallax || 12; p.style.transform = `translate3d(${x * k}px, ${y * k}px, 0)`; }); });
+
+  setUI(0); resetRing();
+  setTimeout(() => slides.slice(1, 3).forEach(sl => sl.querySelectorAll('img[loading="lazy"]').forEach(im => im.loading = 'eager')), 1500);
+})();
+</script>
+</body>
+</html>
